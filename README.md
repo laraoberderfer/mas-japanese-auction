@@ -10,3 +10,12 @@ Wooldridge e Jennings (1997) em sua definição de agentes, listam as seguintes 
 O SMA foi programado em uma versão estendida da linguagem AgentSpeak(L), por meio do interpretador Jason é baseado em sistemas de crenças, desejos e intenções (BDI - Beliefs, Desires and Intentions); CArtAgO é um framework e infraestrutura para programação e execução de ambientes baseados em artefato e Moise é um modelo organizacional para sistemas multiagentes baseado em noções como funções, grupos e missões. Ele permite que um MAS tenha uma especificação explícita de sua organização. 
 
 Para o trabalho foi utilizado as diretrizes da FIPA (Foundation for Intelligent, Physical Agents - Fundação para Agentes Físicos e Inteligentes), que é uma organização internacional dedicada a promover a organização de agentes inteligentes, desenvolvendo as especificações que suportam as aplicações de agentes.
+
+-------------------------------------------------------------------------------------------------
+#### Autora
+- Professora Lara Popov Zambiasi Bazzi Oberderfer
+- Docente de Informática - Câmpus Chapecó
+- Acadêmica do Doutorado de Automação e Sistemas da UFSC 2021  
+- Instituto Federal de Santa Catarina - Câmpus Chapecó
+- IFSC: http://www.chapeco.ifsc.edu.br
+-------------------------------------------------------------------------------------------------
