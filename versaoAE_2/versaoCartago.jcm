@@ -1,0 +1,39 @@
+/* 
+    versaoCartago - versao AE Ambiente
+    ---------------------------
+
+    JaCaMo Project File
+    
+     Abril 28, 2021
+	
+	# Acadêmica Lara Popov Zambiasi Bazzi Oberderfer
+*/
+
+mas versaoCartago {
+
+      agent leiloeiro       : auctioneer.asl {
+      	goals:  start(a1,"produtos(anahickman,1)")
+                start(a2,"produtos(mormaii,2)")
+                start(a3,"produtos(dolce&gabana,3)")
+                start(a4,"produtos(rayban,4)")
+                start(a5,"produtos(prada,5)")
+                start(a6,"produtos(dior, 6)")
+                start(a7,"produtos(vogue, 7)")
+                start(a8,"produtos(carrera, 8)")
+                start(a9,"produtos(haru, 9)")
+                start(a10,"produtos(gucci, 10)")
+         join: arena
+     }
+ 
+    agent comprador         : participant.asl {
+        instances: 2
+        join: arena
+    }
+    
+     workspace arena {}
+     
+    // agent source path
+    asl-path: src/agt
+              src/agt/inc
+}
+

@@ -1,0 +1,35 @@
+/*
+    versaoMoise Moise
+    ---------------------------
+	
+    Abril 25, 2021
+	
+	# Acadêmica Lara Popov Zambiasi Bazzi Oberderfer
+*/
+
+mas versaoMoise {
+
+   agent leiloeiro     : auctioneer.asl{   	    
+        instances: 1
+        //join: aorg
+    }
+    
+    agent comprador    : participant.asl {
+        instances: 10
+        //join: aorg
+    }
+
+    organisation aorg : auction_os.xml {
+        group agrp :  auctionGroup {
+             players: leiloeiro    auctioneer
+                      comprador    participant
+            debug
+        } 
+    }
+    
+    // agent source path
+    asl-path: src/agt
+              src/agt/inc
+   
+}
+

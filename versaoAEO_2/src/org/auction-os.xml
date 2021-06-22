@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+
+<organisational-specification
+    id="versaoAEO"
+    os-version="0.8"
+
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+
+<structural-specification>
+
+    <role-definitions>
+        <role id="leiloeiro" />
+        <role id="comprador" />
+    </role-definitions>
+
+    <group-specification id="auction_group">
+        <roles>
+            <role id="leiloeiro"  min="1" max="1"/>
+            <role id="comprador" min="1" max="100"/>
+        </roles>
+    </group-specification>
+
+</structural-specification>
+
+<functional-specification>
+    <scheme id="auction_scheme">
+    
+        <goal id="finish_auction">
+            <plan operator="sequence">
+                <goal id="create_auction_room"/>
+                <goal id="join_room"/>
+                <goal id="do_auction"/>
+            </plan>
+        </goal>
+
+        <mission id="mleiloeiro" min="1" max="1">
+            <goal id="finish_auction"/>
+            <goal id="create_auction_room"/>
+            <goal id="do_auction"/>
+        </mission>
+        
+        <mission id="mcomprador" min="1" >
+            <goal id="join_room" />
+        </mission>
+        
+    </scheme>
+</functional-specification>
+
+<normative-specification>
+  <norm id="n1"  type="obligation"   role="leiloeiro"   mission="mleiloeiro" />
+  <norm id="n2"  type="obligation"   role="comprador"  mission="mcomprador" />
+</normative-specification>
+
+</organisational-specification>

@@ -1,0 +1,28 @@
+/*
+    versaoAEO
+    ---------------------------
+	JaCaMo 0.9
+    Abril 28, 2021	
+	# Acadêmica Lara Popov Zambiasi Bazzi Oberderfer    
+*/
+
+mas versaoAEO {
+
+    agent leiloeiro
+
+    agent maxBidder {
+        instances: 1
+    }
+
+    agent minBidder {
+        instances: 1
+    }
+
+    agent randomBidder {
+        instances: 1
+    }
+
+    asl-path: src/agt, src/agt/inc
+    
+}
+

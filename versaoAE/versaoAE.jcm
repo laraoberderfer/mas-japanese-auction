@@ -1,0 +1,31 @@
+/*
+    versaoAE Cartago
+    ---------------------------
+	
+    Abril 25, 2021
+	
+	# Acadêmica Lara Popov Zambiasi Bazzi Oberderfer
+*/
+
+mas versaoAE {
+
+    agent maxLance : maxLance.asl {
+        instances: 1
+    }
+
+    agent minLance : minLance.asl {
+        instances: 1
+    }
+
+    agent randomLance : randomLance.asl {
+        instances: 5
+    }
+
+    agent leiloeiro : leiloeiro.asl{ }
+
+    workspace arena {}
+
+    asl-path: src/agt, src/agt/inc
+
+}
+

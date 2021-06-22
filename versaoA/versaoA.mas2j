@@ -1,0 +1,22 @@
+/*
+    versaoA - Jason
+    ---------------------------
+	
+    Abril 22, 2021
+	
+	# Acadêmica Lara Popov Zambiasi Bazzi Oberderfer
+*/
+
+MAS versaoA {
+
+	infrastructure: Centralised
+
+    agents:
+		leiloeiro;		
+		
+		//Compradores
+		maxLance #1;
+		minLance #1;
+		randomLance #30;
+}
+
